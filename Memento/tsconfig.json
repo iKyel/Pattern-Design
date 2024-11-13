@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                          // Phiên bản JavaScript mà TypeScript sẽ biên dịch xuống
+    "module": "commonjs",                     // Module system
+    "lib": ["es2017", "dom"],
+    "rootDir": "./src",                       // Thư mục chứa mã nguồn TypeScript
+    "outDir": "./dist",                       // Thư mục sau khi biên dịch
+    "strict": true,                           // Bật các kiểm tra nghiêm ngặt
+    "esModuleInterop": true,                  // Cho phép tương tác với các module ES
+    "skipLibCheck": true,                     // Bỏ qua kiểm tra kiểu dữ liệu trong các thư viện
+    "forceConsistentCasingInFileNames": true  // Cưỡng ép phân biệt chữ hoa/thường ở tên file
+  },
+  "include": ["src/**/*"],                    // Các file và thư mục được biên dịch
+  "exclude": ["node_modules", "**/*.test.ts"] // Các file và thư mục bị loại trừ
+}
